@@ -1,0 +1,142 @@
+nav {
+    background-color: #d3d3d3;
+    border-bottom: #a9a9a9 1px solid;
+    padding-top: 5px;
+    min-height: 30px;
+}
+
+.container{
+    float: right;
+
+    .social-media {
+        float: left;
+    }
+
+    ul{
+        display: flex;
+        list-style: none;
+        padding: 0 1px 0 1px;
+        margin: 0;
+        float: right;
+
+        li{
+            margin-right: 20px;
+            text-decoration: none;
+          
+            a{
+                text-decoration: none;
+                color: #808080;
+                font-size: 12px;
+
+                &:hover {
+                    color: #e8491d;
+                }
+            }      
+        }
+    }   
+}
+
+.search-box{
+    display: flex;
+    justify-content: space-evenly;
+    background: #f4f4f4;
+    border-bottom: #a9a9a9 1px solid;
+
+    .logo{
+        margin-left: 10px;
+    }
+
+    .highlight, .current a{
+        color: #e8491d;
+        font-weight: bold;
+    }
+
+    form{
+        margin-top: 10px;
+        align-items: center;
+        
+        input[type="text"]{
+            padding: 4px;
+            height: 30px;
+            width: 300px;
+            
+        }      
+
+        .button_1{
+            height: 30px;
+            background: #e8491d;
+            border: 0;
+            padding-left: 5px;
+            padding-right: 5px;
+            color: #ffffff;
+            width: 40px;
+        }
+    }
+
+    label {
+        margin-top: 15px;
+        color: #808080;
+        font-size: 14px;
+        text-decoration: none;
+    
+        &:hover {
+            color: #e8491d;
+        }
+    }
+
+    .fa-caret-down {
+        margin-left: 10px;
+    }
+
+    .cart-btn {
+        position: relative;
+        float: right;
+
+        ul {
+            position: absolute;
+            background: #e8e8e8;
+            list-style-type: none;
+            left: 26px;
+            border-radius: 5px;
+            width: 100%;
+            display: none;
+            z-index: 1;
+            
+            li {
+                line-height: 40px;
+                padding: 8px 20px;
+                cursor: pointer;
+
+                a {
+                    color: #e8491d;
+                    text-decoration: none;
+                    display: block;
+                }
+            }
+        }
+
+        .cart-content:before {
+            position: absolute;
+            content: "";
+            height: 20px;
+            width: 20px;
+            background: #e8e8e8;
+            right: 20px;
+            top: -10px;
+            transform: rotate(45deg);
+            z-index: -1;
+        }
+
+        &:hover .cart-content {
+            display: block;
+        }
+    }
+
+    .fa-shopping-cart{
+        margin-top: 15px;
+        padding-right: 5px;
+        color: #e8491d;
+        font-size: 25px;
+    }
+}
+

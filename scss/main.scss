@@ -1,0 +1,24 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+header {
+    margin: auto;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+@import 'navbar';
+@import 'drop-menu';
+@import 'product-description';
+@import 'more-description';
+@import 'also-bought';
+@import 'footer';
+@import 'media';

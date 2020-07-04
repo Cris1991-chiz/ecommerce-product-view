@@ -1,0 +1,231 @@
+.product-view-container {
+    margin-top: 30px;
+    position: relative;
+
+    h4 {
+        text-align: center;
+        padding: 0 15px 0 15px;
+        
+        .product-features {
+            font-size: 17px;
+        }
+    }   
+}
+.col-product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+}
+
+.product-details {
+    padding: 10px;
+    margin: 10px;
+    
+    .img-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        border: 0.1px solid #a9a9a9;
+        color: #ffffff;
+
+        #featured{
+            width: 80%;
+            padding: 10px;
+            cursor: pointer;
+
+        }
+
+        .sale {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0px;
+            background: #ff0000;
+            width: 45px;
+            height: 40px;
+            border-bottom: 10px solid white;
+            border-left: 10px solid red;
+            border-bottom-right-radius: 15px;
+    
+            p {
+                position: relative;
+            }
+        }
+    }
+
+    .brand {
+        background: #d3d3d3;
+        min-height: 30px;
+
+        p {
+            text-align: center;
+            font-size: 14px;
+            line-height: 30px;
+        }
+    }
+
+    .stock {
+        color: #e8491d;
+    }
+
+    .price {
+        font-size: 20px;
+        font-weight: bold;
+        color: #e8491d;
+    
+        .price-sale {
+            text-decoration: line-through;
+            font-size: 15px;
+            color: #808080;
+            margin-left: 20px;
+        }
+    }
+
+    .product-qty {
+        margin-bottom: 10px;
+
+        input {
+            width: 50px;
+            border: 0.5px solid #a9a9a9;
+            text-align: center;
+        }
+
+        .qty-up, .qty-down {
+            border: 0.5px solid #a9a9a9;
+
+            &:hover {
+                border: 0.5px solid #a9a9a9;
+            }
+        }
+
+    }
+
+    .btn-primary {
+        font-size: 14px;
+        background-color: #fa8072;
+        border-color: #fa8072;
+    
+        &:hover {
+            background-color: #e8491d;
+            border: #e8491d;
+        }
+    }
+
+    .btn-secondary {
+        font-size: 14px;
+    }
+}
+
+.product-thumbnails {
+    max-width: 500px;
+    display: flex;
+    min-height: 100px;
+    align-items: center;
+    margin-top: 10px;
+
+    #slideright, #slideleft{
+        cursor: pointer;
+        transition: .3s;
+    }
+}
+
+#productslider {
+    width: 440px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+
+    .thumbnail {
+        object-fit: cover;
+        max-width: 180px;
+        max-height: 100px;
+        cursor: pointer;
+        opacity: 0.7;
+        margin: 5px;
+    
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    .active {
+        opacity: 1;
+    }
+}
+
+.media-btn-fb {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin: 10px 10px 10px 0;
+    background-color: #355998;
+    border-radius: 50%;
+
+    .fa-facebook {
+        line-height: 45px;
+        margin-left: 14px;
+        font-size: 25px;
+        color: #ffffff;
+    }
+}
+
+.media-btn-insta {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin: 10px 10px 10px 0;
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    border-radius: 50%;
+
+    .fa-instagram {
+        line-height: 45px;
+        margin-left: 12px;
+        font-size: 25px;
+        color: #ffffff;
+    }
+}
+
+.media-btn-twit {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin: 10px 10px 10px 0;
+    background: #00acee;
+    border-radius: 50%;
+
+    .fa-twitter {
+        line-height: 45px;
+        margin-left: 12px;
+        font-size: 25px;
+        color: #ffffff;
+    }
+}
+
+.media-btn-app {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin: 10px 10px 10px 0;
+    background: #25d366;
+    border-radius: 50%;
+
+    .fa-whatsapp {
+        line-height: 45px;
+        margin-left: 12px;
+        font-size: 25px;
+        color: #ffffff;
+    }
+}
+
+.fa-star, .fa-star-half-o {
+    color: #808080;
+}
+
+
+
+
+
+
+
+
+
