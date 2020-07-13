@@ -10,6 +10,13 @@
     padding: 1px;
 }
 
+.also-bought {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
 .products {
     float: left;
     width: 20%;
@@ -32,15 +39,13 @@
     margin: 1px 10px 10px 10px;
     text-align: center;
 
-    .btn-primary {
-        font-size: 14px;
-        background-color: #fa8072;
-        border-color: #fa8072;
-
-        &:hover {
-            background-color: #e8491d;
-            border: #e8491d;
-        }
+    .btn-secondary,
+    .btn-secondary:hover,
+    .btn-secondary:active,
+    .btn-secondary:visited,
+    .btn-secondary:focus {
+        background-color: #e8491d !important;
+        border-color: #e8491d !important;
     }
 
     h5 {

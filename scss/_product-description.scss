@@ -100,19 +100,13 @@
 
     }
 
-    .btn-primary {
-        font-size: 14px;
-        background-color: #fa8072;
-        border-color: #fa8072;
-    
-        &:hover {
-            background-color: #e8491d;
-            border: #e8491d;
-        }
-    }
-
-    .btn-secondary {
-        font-size: 14px;
+    .btn-secondary,
+    .btn-secondary:hover,
+    .btn-secondary:active,
+    .btn-secondary:visited,
+    .btn-secondary:focus {
+        background-color: #e8491d !important;
+        border-color: #e8491d !important;
     }
 }
 
